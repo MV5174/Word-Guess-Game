@@ -5,25 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Word Guess Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <script type="text/javascript" src="assets/javascript/game.js"></script>
 </head>
 <body>
-    <!--Metalcore theme-->
-
-    <!--Press any key to get started-->
-    <h1>Press any key to get started!</h1>
-
-    <!--Images that cycle-->
-
-    <!--Underscores to denote how many letters in the word there are-->
-    <h2>Word: <span id="word"></span></h2>
-    <!--Wins-->
-    <h2>Wins: <span id="wins"></span></h2>
-    <!--Guesses left-->
-    <h2>Guesses Left: <span id="guessesLeft"></span></h2>
-    <!--Letters guessed already-->
-    
+    <div class="card-deck">
+    <!--Pokemon theme-->
+        <div class="card text-white mb-3 keyStart" style="max-width: 18rem;">
+                <div class="card-body">
+                  <!--Press any key to get started-->
+                  <h2 class="card-title">Press any key to get started!</h2>
+                </div>
+        </div>
+<!--Underscores to denote how many letters in the word there are-->
+        <div class="card text-white mb-3 word" style="max-width: 18rem;">
+            <div class="card-body"><h3>Word:</h3></div>
+                <div class="card-body">
+                    <h5 class="card-title"><span id="word"></span></h5>
+                </div>
+        </div>
+<!--Wins-->
+<div class="card text-white mb-3 wins" style="max-width: 18rem;">
+        <div class="card-body"><h3>Wins:</h3></div>
+            <div class="card-body">
+                <h5 class="card-title"><span id="wins"></span></h5>
+            </div>
+    </div>
+<!--Guesses left-->
+<div class="card text-white mb-3 guessesLeft" style="max-width: 18rem;">
+        <div class="card-body"><h3>Guesses Left:</h3></div>
+            <div class="card-body">
+                <h5 class="card-title"><span id="guessesLeft"></span></h5>
+            </div>
+    </div>
+<!--Letters guessed already-->
+<div class="card text-white mb-3 lettersGuessed" style="max-width: 18rem;">
+        <div class="card-body"><h3>Letters Guessed:</h3></div>
+            <div class="card-body">
+                <h5 class="card-title"><span id="lettersGuessed"></span></h5>
+            </div>
+    </div>
+</div>
+<div class="card-deck">
+        <div class="card">
+                <img src="https://assets1.ignimgs.com/2018/03/22/download-3-1521748915422_400w.jpeg" class="card-img-top pic" id="pik" alt="Pikachu">
+        </div>
+        <div class="card">
+                <img src="https://attackofthefanboy.com/wp-content/uploads/2019/03/Pokemon-GO-Rayquaza-Counters-How-to-Beat.jpg" class="card-img-top pic" id ="ray" alt="Rayquaza">
+        </div>
+        <div class="card">
+                <img src="https://media.comicbook.com/2017/09/charizard-1020862.png" class="card-img-top pic" id="char" alt="Charizard">
+        </div>
+        <div class="card">
+                <img src="https://vignette.wikia.nocookie.net/pokemontowerdefensethree/images/f/f3/Squirtle.jpg/revision/latest?cb=20160806214440" class="card-img-top pic" id="squ" alt="Squirtle">
+        </div>
+        <div class="card">
+                <img src="https://i.pinimg.com/236x/58/ab/f1/58abf1c1b5908733de9b5f72ea5afaaf--scrabble-tiles-mudkip.jpg" class="card-img-top pic" id="mud" alt="Mudkip">
+        </div>
+</div>
 </body>
 
 </html>

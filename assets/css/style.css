@@ -1,0 +1,13 @@
+body{
+    background: url("https://wallup.net/wp-content/uploads/2016/05/24/143432-nature-Pokemon-748x468.jpg");
+    background-size: 748px 936px;
+}
+.card{
+    background-color: #79c9fa;
+    margin-top: 75px;
+}
+.pic{
+    height: 260px;
+    width: 358px;
+    visibility: hidden;
+}

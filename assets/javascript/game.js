@@ -3,11 +3,11 @@ var winsCounter = 0;
 console.log("wins " + winsCounter);
 var guessesLeftCounter = 10;
 console.log("guesses left " + guessesLeftCounter);
-var words = ["it", "dog"];
+var words = ["pikachu", "rayquaza", "charizard", "squirtle", "mudkip"];
 
 var chosenLetters = [];
 
-
+var lettersGuessed = [];
 //make function that when the window starts the comp chooses a word from the array
 window.onload = function (event) {
     var compChoice = words[Math.floor(Math.random() * words.length)];
@@ -21,6 +21,17 @@ window.onload = function (event) {
     console.log("remaining letters " + remainingLetters);
     document.getElementById("guessesLeft").innerHTML = guessesLeftCounter;
     document.getElementById("wins").innerHTML = winsCounter;
+        if (compChoice === "pikachu"){
+            document.getElementById("pik").style.visibility = "visible";
+        }else if (compChoice === "rayquaza"){
+            document.getElementById("ray").style.visibility = "visible";
+        }else if (compChoice === "charizard"){
+            document.getElementById("char").style.visibility = "visible";
+        }else if (compChoice === "squirtle"){
+            document.getElementById("squ").style.visibility = "visible";
+        }else if (compChoice === "mudkip"){
+            document.getElementById("mud").style.visibility = "visible";
+        }
     //make a function that reads the user's key pressed
     document.onkeyup = function (event) {
         var guessTrue = false;
@@ -29,6 +40,8 @@ window.onload = function (event) {
         //make a function that places the user's keys pressed into an empty array to show what you guessed
         chosenLetters.join(userGuess);
         console.log(chosenLetters);
+        lettersGuessed.push(userGuess);
+        console.log("Letters guessed incorrectly " + lettersGuessed);
         //make a function that reads if the user's key pressed matches a letter in the chosen words, if not subtract 1 guess from guessesLeftCounter
         for (var j = 0; j < compChoice.length; j++) {
             if (compChoice[j] === userGuess) {
@@ -45,6 +58,7 @@ window.onload = function (event) {
         } else {
             guessesLeftCounter--;
             console.log("Guesses left " + guessesLeftCounter);
+            document.getElementById("lettersGuessed").innerHTML = lettersGuessed;
         }
             document.getElementById("guessesLeft").innerHTML = guessesLeftCounter;
             document.getElementById("word").innerHTML = chosenLetters;
