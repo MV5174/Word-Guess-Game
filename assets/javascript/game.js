@@ -20,17 +20,37 @@ window.onload = function (event) {
     var remainingLetters = compChoice.length;
     console.log("remaining letters " + remainingLetters);
     document.getElementById("guessesLeft").innerHTML = guessesLeftCounter;
-    document.getElementById("wins").innerHTML = winsCounter;
-        if (compChoice === "pikachu"){
+    document.getElementById("wins").innerHTML = winsCounter; 
+           if (compChoice === "pikachu"){
             document.getElementById("pik").style.visibility = "visible";
-        }else if (compChoice === "rayquaza"){
+            document.getElementById("ray").style.visibility = "hidden";
+            document.getElementById("char").style.visibility = "hidden";
+            document.getElementById("squ").style.visibility = "hidden";
+            document.getElementById("mud").style.visibility = "hidden";
+        } if (compChoice === "rayquaza"){
             document.getElementById("ray").style.visibility = "visible";
-        }else if (compChoice === "charizard"){
+            document.getElementById("pik").style.visibility = "hidden";
+            document.getElementById("char").style.visibility = "hidden";
+            document.getElementById("squ").style.visibility = "hidden";
+            document.getElementById("mud").style.visibility = "hidden";
+        } if (compChoice === "charizard"){
             document.getElementById("char").style.visibility = "visible";
-        }else if (compChoice === "squirtle"){
+            document.getElementById("ray").style.visibility = "hidden";
+            document.getElementById("pik").style.visibility = "hidden";
+            document.getElementById("squ").style.visibility = "hidden";
+            document.getElementById("mud").style.visibility = "hidden";
+        } if (compChoice === "squirtle"){
             document.getElementById("squ").style.visibility = "visible";
-        }else if (compChoice === "mudkip"){
+            document.getElementById("ray").style.visibility = "hidden";
+            document.getElementById("pik").style.visibility = "hidden";
+            document.getElementById("char").style.visibility = "hidden";
+            document.getElementById("mud").style.visibility = "hidden";
+        } if (compChoice === "mudkip"){
             document.getElementById("mud").style.visibility = "visible";
+            document.getElementById("ray").style.visibility = "hidden";
+            document.getElementById("pik").style.visibility = "hidden";
+            document.getElementById("char").style.visibility = "hidden";
+            document.getElementById("squ").style.visibility = "hidden";
         }
     //make a function that reads the user's key pressed
     document.onkeyup = function (event) {
@@ -77,6 +97,38 @@ window.onload = function (event) {
                 remainingLetters = compChoice.length;
                 console.log("remaining letters " + remainingLetters);
                 document.getElementById("word").innerHTML = chosenLetters;
+                lettersGuessed = [];
+                if (compChoice === "pikachu"){
+                    document.getElementById("pik").style.visibility = "visible";
+                    document.getElementById("ray").style.visibility = "hidden";
+                    document.getElementById("char").style.visibility = "hidden";
+                    document.getElementById("squ").style.visibility = "hidden";
+                    document.getElementById("mud").style.visibility = "hidden";
+                } if (compChoice === "rayquaza"){
+                    document.getElementById("ray").style.visibility = "visible";
+                    document.getElementById("pik").style.visibility = "hidden";
+                    document.getElementById("char").style.visibility = "hidden";
+                    document.getElementById("squ").style.visibility = "hidden";
+                    document.getElementById("mud").style.visibility = "hidden";
+                } if (compChoice === "charizard"){
+                    document.getElementById("char").style.visibility = "visible";
+                    document.getElementById("ray").style.visibility = "hidden";
+                    document.getElementById("pik").style.visibility = "hidden";
+                    document.getElementById("squ").style.visibility = "hidden";
+                    document.getElementById("mud").style.visibility = "hidden";
+                } if (compChoice === "squirtle"){
+                    document.getElementById("squ").style.visibility = "visible";
+                    document.getElementById("ray").style.visibility = "hidden";
+                    document.getElementById("pik").style.visibility = "hidden";
+                    document.getElementById("char").style.visibility = "hidden";
+                    document.getElementById("mud").style.visibility = "hidden";
+                } if (compChoice === "mudkip"){
+                    document.getElementById("mud").style.visibility = "visible";
+                    document.getElementById("ray").style.visibility = "hidden";
+                    document.getElementById("pik").style.visibility = "hidden";
+                    document.getElementById("char").style.visibility = "hidden";
+                    document.getElementById("squ").style.visibility = "hidden";
+                }
             }
             //make a function that alerts the user they won if they got 3 correct words
             if (winsCounter === 3) {
@@ -97,6 +149,38 @@ window.onload = function (event) {
                 guessesLeftCounter = 10;
                 console.log("guesses left " + guessesLeftCounter);
                 document.getElementById("guessesLeft").innerHTML = guessesLeftCounter;
+                lettersGuessed = [];
+                if (compChoice === "pikachu"){
+                    document.getElementById("pik").style.visibility = "visible";
+                    document.getElementById("ray").style.visibility = "hidden";
+                    document.getElementById("char").style.visibility = "hidden";
+                    document.getElementById("squ").style.visibility = "hidden";
+                    document.getElementById("mud").style.visibility = "hidden";
+                } if (compChoice === "rayquaza"){
+                    document.getElementById("ray").style.visibility = "visible";
+                    document.getElementById("pik").style.visibility = "hidden";
+                    document.getElementById("char").style.visibility = "hidden";
+                    document.getElementById("squ").style.visibility = "hidden";
+                    document.getElementById("mud").style.visibility = "hidden";
+                } if (compChoice === "charizard"){
+                    document.getElementById("char").style.visibility = "visible";
+                    document.getElementById("ray").style.visibility = "hidden";
+                    document.getElementById("pik").style.visibility = "hidden";
+                    document.getElementById("squ").style.visibility = "hidden";
+                    document.getElementById("mud").style.visibility = "hidden";
+                } if (compChoice === "squirtle"){
+                    document.getElementById("squ").style.visibility = "visible";
+                    document.getElementById("ray").style.visibility = "hidden";
+                    document.getElementById("pik").style.visibility = "hidden";
+                    document.getElementById("char").style.visibility = "hidden";
+                    document.getElementById("mud").style.visibility = "hidden";
+                } if (compChoice === "mudkip"){
+                    document.getElementById("mud").style.visibility = "visible";
+                    document.getElementById("ray").style.visibility = "hidden";
+                    document.getElementById("pik").style.visibility = "hidden";
+                    document.getElementById("char").style.visibility = "hidden";
+                    document.getElementById("squ").style.visibility = "hidden";
+                }
             }
             if (guessesLeftCounter === 0){
                 alert("You lost, try again!")
@@ -116,6 +200,38 @@ window.onload = function (event) {
                 guessesLeftCounter = 10;
                 console.log("guesses left " + guessesLeftCounter);
                 document.getElementById("guessesLeft").innerHTML = guessesLeftCounter;
+                lettersGuessed = [];
+                if (compChoice === "pikachu"){
+                    document.getElementById("pik").style.visibility = "visible";
+                    document.getElementById("ray").style.visibility = "hidden";
+                    document.getElementById("char").style.visibility = "hidden";
+                    document.getElementById("squ").style.visibility = "hidden";
+                    document.getElementById("mud").style.visibility = "hidden";
+                } if (compChoice === "rayquaza"){
+                    document.getElementById("ray").style.visibility = "visible";
+                    document.getElementById("pik").style.visibility = "hidden";
+                    document.getElementById("char").style.visibility = "hidden";
+                    document.getElementById("squ").style.visibility = "hidden";
+                    document.getElementById("mud").style.visibility = "hidden";
+                } if (compChoice === "charizard"){
+                    document.getElementById("char").style.visibility = "visible";
+                    document.getElementById("ray").style.visibility = "hidden";
+                    document.getElementById("pik").style.visibility = "hidden";
+                    document.getElementById("squ").style.visibility = "hidden";
+                    document.getElementById("mud").style.visibility = "hidden";
+                } if (compChoice === "squirtle"){
+                    document.getElementById("squ").style.visibility = "visible";
+                    document.getElementById("ray").style.visibility = "hidden";
+                    document.getElementById("pik").style.visibility = "hidden";
+                    document.getElementById("char").style.visibility = "hidden";
+                    document.getElementById("mud").style.visibility = "hidden";
+                } if (compChoice === "mudkip"){
+                    document.getElementById("mud").style.visibility = "visible";
+                    document.getElementById("ray").style.visibility = "hidden";
+                    document.getElementById("pik").style.visibility = "hidden";
+                    document.getElementById("char").style.visibility = "hidden";
+                    document.getElementById("squ").style.visibility = "hidden";
+                }
             }
         
 
